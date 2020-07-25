@@ -39,7 +39,20 @@ int **read_File(char *file_name){
 	// end of this chunk
 	
 	
-	
+	//This chunk of code both stores info about the input file and gets each line and concatinates it to contents
+	struct stat sa;
+    fstat(fileno(input), &sa);
+    char *Contents = (char *)malloc(((int)sa.st_size + 1) * sizeof(char)); //define a char that is the size of the inout file
+    Contents[0] = '\0';
+    while (!feof(input)) //walk through until end of file
+    {
+        char line[100];
+        if (fgets(line, 100, input) != NULL)
+        {
+            strncat(Contents, line, strlen(line)); //concatinate from file to contents
+        }
+    }
+	//end of this chunk
 	
 }
 
