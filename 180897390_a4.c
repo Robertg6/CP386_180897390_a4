@@ -12,7 +12,7 @@ CP386 Assignment 4
 #include <stdlib.h>
 
 #include <string.h>
-
+ 
 #include <pthread.h>
 
 #include <sys/stat.h>
@@ -20,6 +20,17 @@ CP386 Assignment 4
 #include <semaphore.h>
 
 #include <time.h>
+
+
+//definition of global variables
+
+int **avail; //the avaliable resources
+int **max; //the maximum deamand for each customer
+int **current_allocated; //the currently allocated resources
+int customer_count; //the current count of customers in the system
+int resource_count; //the amaount of resources
+
+//end of definition of global variables
 
 void* run_thread(void *t) //this is a function to run each thread in the program
 int **read_File(char *file_name) // this is a function that will be used to 
