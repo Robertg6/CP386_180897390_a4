@@ -5,3 +5,8 @@ the motivation of this project is to complete assignment 4 for course CP 386 at 
 
 # Installation
 
+
+
+# Contributors
+
+Robert Goss student #180897390
