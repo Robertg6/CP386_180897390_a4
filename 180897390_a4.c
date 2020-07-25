@@ -27,9 +27,23 @@ int **read_File(char *file_name) // this is a function that will be used to
 
 int main(int argc, char *argv[]){}
 
-int **read_File(char *file_name){}
+int **read_File(char *file_name){
+	
+	//this chunk checks if there is a valid input file
+	FILE *input = fopen(file_name, "r");
+    if (!input)
+    {
+        printf("Child A: Error in opening input file...exiting with error code -1\n");
+        return NULL;
+    }
+	// end of this chunk
+	
+	
+	
+	
+}
 
-void* run_thread(void *t)
+void* run_thread(void *t){}
 
 
 
