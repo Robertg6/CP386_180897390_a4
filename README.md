@@ -5,7 +5,15 @@ the motivation of this project is to complete assignment 4 for course CP 386 at 
 
 # Installation
 
+To install the code start by cloning the repository, then navigate to it using your terminal. Fromthere you can use the makefile to compile the program. This can be done by using a few different commands, listed below:
 
+to compile the program you can use the command: Make
+
+This is the same as: Make warnings_BAD
+
+To allow warnings use: Make warnings_OK
+
+To run the code use: 
 
 # Contributors
 
