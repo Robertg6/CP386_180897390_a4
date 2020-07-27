@@ -33,8 +33,9 @@ int resource_count; //the amaount of resources
 //end of definition of global variables
 
 void* run_thread(void *t) //this is a function to run each thread in the program
-int **read_File(char *file_name) // this is a function that will be used to 
-
+int **read_File(char *file_name) // this is a function that will be used to read the file along with other set up
+void single_util(int *d, int a, int b) //this is a utility function that wil be used to output the single pointer data
+void double_utility(int *d, int a, int b)// this is a utility function that can be used to output the double pointer data
 
 int main(int argc, char *argv[]){}
 
@@ -65,6 +66,18 @@ int **read_File(char *file_name){
     }
 	//end of this chunk
 	
+}
+
+
+void* single_utility(int *d, int a){
+	//This function isdesign so astoprint the value of the single pointer to make my life easier ;-)
+	for(int v = 0; v < a; v++){
+		printf("%d", d[v]);
+		if(v < a-1){
+			printf(" ");
+		}
+		printf("\n");
+	}
 }
 
 void* run_thread(void *t){}
