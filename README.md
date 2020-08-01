@@ -13,7 +13,9 @@ This is the same as: Make warnings_BAD
 
 To allow warnings use: Make warnings_OK
 
-To run the code use: 
+To run the code use: ./Assign_4 a b c...
+
+Where the parameters a b c are replaced with integers representing the resources in the program
 
 # Contributors
 
