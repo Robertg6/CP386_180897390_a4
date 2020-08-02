@@ -13,7 +13,9 @@ to run use: ./a.out a b c....
 
 Where the parameters a b c are replaced with integers representing the resources in the program
 
-#ScreenShots and Testing
+# ScreenShots and Testing
+
+View the screenshots file to see the testing screenshots
 
 # Contributors
 
